@@ -1,0 +1,38 @@
+/* GenericRange.css */
+
+.form-range {
+    appearance: none;
+    width: 100%;
+    height: var(--range-height, 4px);
+    background: var(--range-track-color, #ddd);
+    outline: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .form-range::-webkit-slider-thumb {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--range-thumb-color, #0d6efd);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--range-thumb-color, #0d6efd);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  .form-range::-webkit-slider-runnable-track {
+    background: var(--range-fill-color, #0d6efd);
+  }
+  
+  .form-range:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  

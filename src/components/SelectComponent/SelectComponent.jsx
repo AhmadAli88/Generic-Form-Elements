@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import GenericSelect from '../../custom/Select/GenericSelect';
+
 import { FaChevronDown } from 'react-icons/fa'; // Example icon
+import GenericSelect from '../../custom/formElements/Select/GenericSelect';
 
 const SelectComponent = () => {
   const [selectedValue, setSelectedValue] = useState('');

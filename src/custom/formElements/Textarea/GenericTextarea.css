@@ -1,0 +1,23 @@
+/* GenericTextarea.css */
+.form-control {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    transition: border-color 0.3s ease-in-out;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #0d6efd; /* Bootstrap's primary color */
+  }
+  
+  .form-control[disabled] {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+  }
+  
+  .generic-textarea-container .form-label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    display: block;
+  }
+  

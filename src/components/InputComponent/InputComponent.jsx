@@ -1,5 +1,6 @@
 import React from "react";
-import GenericInputField from "../../custom/SimpleInput/GenericInputField";
+import GenericInputField from "../../custom/formElements/SimpleInput/GenericInputField";
+
 
 
 const InputComponent = () => {

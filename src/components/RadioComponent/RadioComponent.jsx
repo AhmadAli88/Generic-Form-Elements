@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import GenericRadioButton from "../../custom/Radio/Radio";
+import GenericRadioButton from "../../custom/formElements/Radio/Radio";
+
 
 const RadioComponent = () => {
   const [selectedRadio, setSelectedRadio] = useState("");
