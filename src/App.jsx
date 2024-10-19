@@ -4,13 +4,15 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+import AlertComponent from './components/AlertComponent/AlertComponent';
+import ButtonComponent from './components/Button/ButtonComponent ';
 // import InputComponent from './components/InputComponent/InputComponent';
 // import RadioComponent from './components/RadioComponent/RadioComponent';
 // import CheckboxComponent from './components/CheckboxComponent/CheckboxComponent';
 // import SelectComponent from './components/SelectComponent/SelectCoponent';
 // import RangeComponent from './components/RangeComponent/RangeComponent';
-import TextareaComponent from './components/TextareaComponent/TextareaComponent';
-import AccordionComponent from './components/component/AccordionComponent';
+// import TextareaComponent from './components/TextareaComponent/TextareaComponent';
+// import AccordionComponent from './components/component/AccordionComponent';
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
      {/* <SelectComponent/> */}
      {/* <RangeComponent/> */}
      {/* <TextareaComponent/> */}
-     <AccordionComponent/>
+     {/* <AccordionComponent/> */}
+     {/* <AlertComponent/> */}
+     <ButtonComponent />
     </>
   )
 }

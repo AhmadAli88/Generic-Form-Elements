@@ -1,0 +1,23 @@
+GenericAlert.css
+.alert {
+    padding: 1rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .btn-close {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    margin-left: auto;
+    cursor: pointer;
+  }
+  
+  .alert-icon {
+    margin-right: 0.75rem;
+    font-size: 1.5rem;
+  }
+  
