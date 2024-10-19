@@ -1,11 +1,12 @@
 import React from "react";
-import GenericInputField from "../custom/GenericInputField";
+import GenericInputField from "../../custom/SimpleInput/GenericInputField";
+
 
 const InputComponent = () => {
   return (
     <div>
       <GenericInputField
-        label="Email address Ahmad"
+        label="Email address"
         type="email"
         placeholder="name@example.com"
         controlId="emailInput"
@@ -15,19 +16,14 @@ const InputComponent = () => {
         placeholderColor="purple"
         placeholderFontSize="50px"
         padding="10px"
-        margin="10px"
-        fontFamily="Arial"
+        margin="10px 40px"
+        fontFamily="Verdana"
         boxShadow="0 4px 8px rgba(0, 0, 0, 0.1)"
         autoFocus="true"
         cursorBlink="true"
-        customPlaceholderClass="custom-placeholder-lg" 
+        customPlaceholderClass="custom-placeholder"
         backgroundColor="black"
-      />
-
-      <GenericInputField
-        label="Username"
-        controlId="usernameInput"
-        // This will use the default type "text" and no placeholder
+        border="5px solid lightcoral"
       />
     </div>
   );

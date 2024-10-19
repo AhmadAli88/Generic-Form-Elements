@@ -10,8 +10,6 @@ const GenericInputField = ({
   labelColor,
   width,
   height,
-  placeholderColor,
-  placeholderFontSize,
   padding,
   margin,
   fontFamily,
@@ -19,7 +17,8 @@ const GenericInputField = ({
   autoFocus,
   cursorBlink,
   customPlaceholderClass,
-  backgroundColor
+  backgroundColor,
+  border
 }) => {
   const labelStyle = {
     color: labelColor,
@@ -33,6 +32,8 @@ const GenericInputField = ({
     height: height,
     boxShadow: boxShadow,
     backgroundColor:backgroundColor,
+    margin: margin,
+    border: border,
     // "::placeholder": {
     //   color: placeholderColor,
     //   fontSize: placeholderFontSize,
@@ -88,8 +89,8 @@ GenericInputField.defaultProps = {
   height: "auto",
   placeholderColor: "#6c757d",
   placeholderFontSize: "1rem",
-  padding: "5px",
-  margin: "5px",
+  padding: "0px",
+  margin: "0px",
   fontFamily: "Arial",
   boxShadow: "none",
   autoFocus: "false",

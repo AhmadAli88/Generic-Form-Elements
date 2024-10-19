@@ -1,6 +1,7 @@
 .custom-placeholder::placeholder {
     color: green; /* You can replace this with dynamic values if needed */
     font-size: 12px; /* Adjust the size as needed */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   }
   
   .custom-placeholder-lg::placeholder {

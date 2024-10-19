@@ -1,0 +1,25 @@
+/* Radio.css */
+
+/* Default checked radio style */
+.form-check-input:checked {
+  background-color: var(--radio-color, #0d6efd); /* default color */
+  border-color: var(--radio-color, #0d6efd);
+}
+
+/* Small size */
+.radio-sm {
+  width: 16px;
+  height: 16px;
+}
+
+/* Medium size (default bootstrap size) */
+.radio-md {
+  width: 20px;
+  height: 20px;
+}
+
+/* Large size */
+.radio-lg {
+  width: 24px;
+  height: 24px;
+}
