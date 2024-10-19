@@ -20,17 +20,18 @@ const RadioComponent = () => {
         size="lg" // Large size radio button
         onChange={handleRadioChange}
       />
-
-      <GenericRadioButton
-        label="Option 2"
-        name="radioGroup"
-        id="radio2"
-        defaultChecked={selectedRadio === "radio2"}
-        color="green"
-        boxShadow="none"
-        size="md"
-        onChange={handleRadioChange}
-      />
+      <div className="mt-4">
+        <GenericRadioButton
+          label="Option 2"
+          name="radioGroup"
+          id="radio2"
+          defaultChecked="false"
+          color="green"
+          boxShadow="none"
+          size="md"
+          onChange={handleRadioChange}
+        />
+      </div>
 
       <GenericRadioButton
         label="Disabled Option"

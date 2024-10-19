@@ -1,0 +1,37 @@
+/* GenericSelect.css */
+
+.custom-select-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Default box shadow when the boxShadow prop is passed */
+/* .custom-select-container.box-shadow {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */
+
+.select-icon {
+  position: absolute;
+  right: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.form-select {
+  padding-right: 30px; /* Make space for the icon */
+  border: 1px solid #ccc;
+  transition: box-shadow 0.3s ease;
+}
+
+/* On focus, remove box-shadow */
+.form-select:focus {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Ensure no box shadow when focused */
+  outline: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optionally remove default browser outline */
+}
+
+/* Add box-shadow class for non-focused state */
+/* .custom-select-container.box-shadow .form-select {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+} */

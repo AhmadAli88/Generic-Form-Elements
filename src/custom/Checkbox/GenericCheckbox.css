@@ -1,0 +1,31 @@
+/* GenericCheckbox.css */
+
+/* Default checkbox styles */
+.form-check-input:checked {
+    background-color: var(--checkbox-check-color, #0d6efd);
+    border-color: var(--checkbox-check-color, #0d6efd);
+  }
+  
+  .form-check-input:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.25rem var(--checkbox-focus-color, rgba(0, 123, 255, 0.25));
+  }
+  
+  /* Small size */
+  .checkbox-sm {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Medium size */
+  .checkbox-md {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Large size */
+  .checkbox-lg {
+    width: 24px;
+    height: 24px;
+  }
+  

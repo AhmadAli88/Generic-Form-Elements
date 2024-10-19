@@ -9,3 +9,6 @@
 .form-main{
     width: 400px;
 }
+.form-select{
+    --bs-form-select-bg-img: none !important;
+}

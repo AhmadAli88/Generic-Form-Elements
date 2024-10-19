@@ -1,37 +1,37 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './Radio.css'; // Create a CSS file to customize colors
+import './GenericCheckbox.css'; // Create a CSS file for styles
 
-const GenericRadioButton = ({
+const GenericCheckbox = ({
   label,
   name,
   id,
   defaultChecked,
   disabled,
-  color,
+  checkColor,
+  focusColor,
   size,
   onChange,
-  boxShadow
 }) => {
   // Dynamically build class names for size
-  const radioClass = `form-check-input ${size ? `radio-${size}` : ''}`;
-console.log("radioClass", radioClass)
-  // Inline style to dynamically set the radio button's color when checked
-  const radioStyle = {
-    '--radio-color': color, // This will set the color variable in CSS
-    boxShadow: boxShadow
+  const checkboxClass = `form-check-input ${size ? `checkbox-${size}` : ''}`;
+
+  // Inline styles for checked and focus colors
+  const checkboxStyle = {
+    '--checkbox-check-color': checkColor,
+    '--checkbox-focus-color': focusColor,
   };
 
   return (
     <div className="form-check">
       <input
-        className={radioClass}
-        type="radio"
+        className={checkboxClass}
+        type="checkbox"
         name={name}
         id={id}
         defaultChecked={defaultChecked}
         disabled={disabled}
-        style={radioStyle} // Apply color via CSS variable
+        style={checkboxStyle} // Apply colors using CSS variables
         onChange={onChange}
       />
       <label className="form-check-label" htmlFor={id}>
@@ -42,24 +42,26 @@ console.log("radioClass", radioClass)
 };
 
 // Define prop types
-GenericRadioButton.propTypes = {
+GenericCheckbox.propTypes = {
   label: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   id: PropTypes.string.isRequired,
   defaultChecked: PropTypes.bool,
   disabled: PropTypes.bool,
-  color: PropTypes.string, // Custom color for radio button
+  checkColor: PropTypes.string, // Color for the checkbox when checked
+  focusColor: PropTypes.string, // Color when the checkbox is focused
   size: PropTypes.oneOf(['sm', 'md', 'lg']), // Size prop: small, medium, large
   onChange: PropTypes.func, // onChange handler for events
 };
 
 // Define default props
-GenericRadioButton.defaultProps = {
+GenericCheckbox.defaultProps = {
   defaultChecked: false,
   disabled: false,
-  color: '#0d6efd', // Default to Bootstrap primary color
+  checkColor: '#0d6efd', // Default to Bootstrap primary color
+  focusColor: '#80bdff', // Default Bootstrap focus color
   size: 'md', // Default size is medium
   onChange: () => {}, // Default no-op function for onChange
 };
 
-export default GenericRadioButton;
+export default GenericCheckbox;

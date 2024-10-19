@@ -6,6 +6,8 @@ import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import InputComponent from './components/InputComponent/InputComponent';
 import RadioComponent from './components/RadioComponent/RadioComponent';
+import CheckboxComponent from './components/CheckboxComponent/CheckboxComponent';
+import SelectComponent from './components/SelectComponent/SelectCoponent';
 
 function App() {
   const [count, setCount] = useState(0)
@@ -14,7 +16,9 @@ function App() {
     <>
      {/* <InputComponent/> */}
      {/* <CommonComponent/> */}
-     <RadioComponent/>
+     {/* <RadioComponent/> */}
+     {/* <CheckboxComponent/> */}
+     <SelectComponent/>
     </>
   )
 }
